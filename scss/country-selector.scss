@@ -1,0 +1,72 @@
+#result-container select#country-selector {
+
+
+}
+#result-container {
+  .selected-list {
+    .inner {
+      position: relative;
+      display: block;
+      padding-right: 175px;
+    }
+  }
+}
+#result-container {
+  .country-holder {
+    position: absolute;
+    right: -70px;
+    top: -8px;
+    display: block;
+    padding-left: 25px;
+    &:before {
+      display: block;
+      content:'';
+      position: absolute;
+      left: 0;
+      top: 19px;
+      width: 18px;
+      height:18px;
+      background:url(globe-icon.png);
+    }
+    * {
+      //display: block;
+      line-height: normal;
+    }
+    .top {
+      font-size:10px;
+      text-transform: uppercase;
+      color:#999;
+      margin-left:-24px
+    }
+    .selector {
+      position: relative;
+      margin-top: 5px;
+      &:hover {
+        .text {
+          color:#333;
+        }
+      }
+      .text {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 12px;
+        font-weight: bold;
+        color:#666;
+
+      }
+      select {
+      //  position: relative;
+      //  opacity: 0;
+        cursor:pointer;
+        width: 175px;
+        zoom:1;
+      }
+    }
+  }
+}
